@@ -1,0 +1,133 @@
+/* || RESET */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+/* UTILITY CLASSES */
+.main {
+	width: 100%;
+	height: 100%;
+
+	display: flex;
+}
+
+.left {
+	width: 40%;
+	height: 100%;
+	background-color: #fefae0;
+	background-color: #e9edc9;
+
+	position: relative;
+}
+
+.left-nav {
+	width: 100%;
+	padding: 20px 30px;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+.right-nav {
+	display: flex;
+	align-items: center;
+}
+
+.right-nav a {
+	margin-right: 20px;
+	text-decoration: none;
+	color: black;
+	font-weight: 500;
+	font-size: 14px;
+}
+
+.left .text-part {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.text-part h1 {
+	font-size: 90px;
+}
+
+.text-part p {
+	opacity: 0.6;
+	font-size: 12px;
+	line-height: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.text-part a {
+	text-decoration: none;
+	color: black;
+	border-bottom: 1px solid black;
+	padding-bottom: 5px;
+	font-size: 14px;
+	font-weight: 600;
+	opacity: 0.6;
+}
+
+.right {
+	width: 60%;
+	height: 100%;
+}
+
+.right-top {
+	width: 100%;
+	height: 50%;
+
+	display: flex;
+}
+
+.right-bottom {
+	width: 100%;
+	height: 50%;
+	background-image: url("Assets/orange-3.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+.right-top-left {
+	width: 55%;
+	height: 100%;
+	/* background-image: url("Assets/plant-1.jpg"); */
+	background-image: url("Assets/orange-1.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+.right-top-right {
+	width: 45%;
+	height: 100%;
+	background-image: url("Assets/orange-2.jpg");
+	background-size: cover;
+	background-position: bottom;
+}
+
+/* || MOBILE DEVICE */
+@media screen and (max-width: 1344px) {
+	.main {
+		flex-direction: column;
+	}
+
+	.main .left {
+		width: 100%;
+	}
+
+	.main .right {
+		width: 100%;
+	}
+}
